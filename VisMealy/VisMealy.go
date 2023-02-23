@@ -22,13 +22,12 @@ func main() {
 			fmt.Scan(&arr2[i][j])
 		}
 	}
-	fmt.Println("digraph {")
-	fmt.Println("\trankdir = LR")
+	fmt.Println("digraph {\n \trankdir = LR")
 	for i := 0; i < n; i++ {
 		for j := 0; j < m; j++ {
-			fmt.Printf("\t%d -> %d [label = \"%c(%s)\"]", i, arr[i][j], 97+j, arr2[i][j])
-			fmt.Println()
+			fmt.Printf("\t%d -> %d [label = \"%c(%s)\"]\n", i, arr[i][j], 97+j, arr2[i][j])
 		}
 	}
 	fmt.Println("}")
 }
+
