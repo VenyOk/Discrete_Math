@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-const N = 1000
-const M = 1000
+const N = 10000
+const M = 10000
 
 func main() {
 	var n, m, q0 int
@@ -30,4 +30,3 @@ func main() {
 	}
 	fmt.Println("}")
 }
-
