@@ -5,7 +5,7 @@ import (
 )
 
 var count int
-
+// Навалил кринжа, вообще необязательно через дженерики делать
 type TYPE interface {
 	int | int8 | int16 | int32 | int64
 }
