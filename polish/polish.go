@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "bufio"
+    "os"
+)
 
 func Reverse_with_delete_the_brackets(s string) string {
 	r := []rune(s)
@@ -44,7 +48,10 @@ func polish(expression string) (result int) {
 	result = st[0]
 	return
 }
+
 func main() {
-	s := "- 1 * 4 3"
-	fmt.Println(polish(s))
+    scanner := bufio.NewScanner(os.Stdin)
+    scanner.Scan()
+    s := scanner.Text()
+    fmt.Println(polish(s))
 }
