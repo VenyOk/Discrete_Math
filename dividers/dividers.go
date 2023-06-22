@@ -7,17 +7,13 @@ import (
 )
 
 func isprime(n int) bool {
-	count := 2
 	for i := 2; i < int(math.Sqrt(float64(n)))+1; i++ {
-		if n%i == 0 {
-			count += 1
-			if count > 2 {
-				break
-			}
+		if n % i == 0{
+		    return false
 		}
 	}
 
-	return count == 2
+	return true
 }
 func solve(n int) {
 	arr := make([]int, 0)
